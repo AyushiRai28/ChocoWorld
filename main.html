@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #674446;">
+   
+    <div class="container">
+        <div class="nav2">
+            <div class="nav one logo ">
+                    <img src="fi-rs-shop.png" height="26px">
+                    <h1>ChocoWorld</h1>
+                </div>
+
+            <div class="profile">
+
+                <select >
+                    <option>Location</option>
+                </select>
+                <i class="fa-solid fa-circle-user"></i>
+            </div>    
+        </div>   
+    
+        
+        
+        <div class="today">  
+            <h2> Todays Live offer🔥🎉</h2>
+            <div class="slider">
+                <button class="arrow left">&#10094;</button>
+
+                <div class="offer" id="slider">
+                    <img src="chocolate.png">
+                    <img src="blueberry.png">
+                    <img src="strawbeery.png">
+                    <img src="kiwi.png">
+                </div>
+
+                <button class="arrow right">&#10095;</button>
+            </div>
+
+            <h2 class="prize"> Only at 99.00$</h2>
+
+            <script>
+const slider = document.getElementById("slider");
+
+function slideNext() {
+    slider.scrollBy({ left: 400, behavior: "smooth" });
+}
+
+function slidePrev() {
+    slider.scrollBy({ left: -400, behavior: "smooth" });
+}
+
+document.querySelector(".right").onclick = slideNext;
+document.querySelector(".left").onclick = slidePrev;
+</script>
+
+
+
+        </div>
+        
+        <img src="bg main.png" class="bg">
+
+        <div class="menu">
+
+            <div class="card card1">
+    
+                <div class="card-img">
+                    <img src="hazelnut.png" alt="choco">
+                </div>
+
+                <div class="card-body">
+                    <div class="title-row">
+                        <h3>FreshChoco Milk & Hazelnut</h3>
+                        <span class="heart">♡</span>
+                    </div>
+
+                    <p class="desc">Nutty, creamy, and irresistibly smooth</p>
+
+                    <div class="bottom">
+                        <span class="price">33.00 $</span>
+
+                        <button class="cart-btn">
+                            🛒 Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>    
+
+            <div class="card card2">
+    
+                <div class="card-img">
+                    <img src="hazelnut.png" alt="choco">
+                </div>
+
+                <div class="card-body">
+                    <div class="title-row">
+                        <h3>FreshChoco Milk & Hazelnut</h3>
+                        <span class="heart">♡</span>
+                    </div>
+
+                    <p class="desc">Nutty, creamy, and irresistibly smooth</p>
+
+                    <div class="bottom">
+                        <span class="price">33.00 $</span>
+
+                        <button class="cart-btn">
+                            🛒 Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </div>
+
+    
+    
+</body>
+</html>
